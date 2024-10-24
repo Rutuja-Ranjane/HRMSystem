@@ -4,11 +4,14 @@ public class SalesManager extends SalesRep
     double salesbyteam;
     // System.out.println("the managers commision is ---------->" + salesbyteam);
 
+
     public SalesManager(String fname, String lname, int registration, int age, int daysWorked, int vacationDaysTaken,
-            double salary, int yearWorked, double salesMade, double salesbyteam) {
-        super(fname, lname, registration, age, daysWorked, vacationDaysTaken, salary, yearWorked, salesMade);
+            int yearWorked, double salary, String userName, String passWord, double salesMade, double salesbyteam) {
+        super(fname, lname, registration, age, daysWorked, vacationDaysTaken, yearWorked, salary, userName, passWord,
+                salesMade);
         this.salesbyteam = salesbyteam;
     }
+
 
     public void calculateCom()
     {
@@ -16,7 +19,6 @@ public class SalesManager extends SalesRep
         // return 0.03f*salesbyteam;
         System.out.println("the managers commision is ---------->" + 0.03f*salesbyteam);
      }
-
 
     
 }
